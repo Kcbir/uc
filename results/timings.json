@@ -1,0 +1,17 @@
+{
+ "Exactness checks (enumeration, full history, MIP)": 13.228993582997646,
+ "Minimality checks": 6.376645625001402,
+ "Base-case threshold theorem sweep": 5.243373875004181,
+ "General-case sweeps": 24.276160125002207,
+ "Persistence sweep": 17.291678875000798,
+ "Counterexamples + adversarial search": 90.78312250000454,
+ "RTS single units: naive vs augmented vs mean-path MIP": 1.0674633329981589,
+ "Base-case figure data": 0.028008916997350752,
+ "Sensitivity": 0.15494362499885028,
+ "Fleet exactness checks": 1.1639782920028665,
+ "Fleet DP (N=5): naive vs augmented": 16.827507166999567,
+ "Fleet runtime scaling": 81.43679045799945,
+ "State-space table": 0.004473875000257976,
+ "Figures": 7.077577042000485,
+ "Total pipeline": 265.83727775000443
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="220" viewBox="0 0 480 220" fill="none">
+  <title>Commitment hysteresis</title>
+  <desc>Two switching thresholds form a rectangular hysteresis loop: shutdown at a lower price and startup at a higher price.</desc>
+  <g stroke="#8b949e" stroke-width="1" opacity=".55">
+    <path d="M62 164H424M62 164V36"/>
+    <path d="M160 164V52M322 164V52" stroke-dasharray="3 6" opacity=".6"/>
+  </g>
+  <g stroke="#58a6d9" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M82 148H322V60H404M404 60H160V148H82"/>
+    <path d="M250 144L256 148L250 152M318 105L322 99L326 105M230 56L224 60L230 64M156 103L160 109L164 103"/>
+  </g>
+  <g fill="#8b949e" font-family="Georgia, 'Times New Roman', serif" font-size="13">
+    <text x="42" y="151">0</text><text x="42" y="64">1</text>
+    <text x="420" y="188" font-style="italic">p</text>
+    <text x="55" y="27" font-style="italic">u</text>
+    <text x="160" y="188" text-anchor="middle">p↓</text>
+    <text x="322" y="188" text-anchor="middle">p↑</text>
+  </g>
+</svg>

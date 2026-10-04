@@ -1,0 +1,267 @@
+{
+ "checks": [
+  {
+   "check": "DP optimum = exhaustive enumeration of all $2^{10}$ schedules (deterministic prices)",
+   "ref": "Thm.~\\ref{thm:markov}",
+   "instances": 200,
+   "passes": 200,
+   "failures": 0,
+   "unit": "instances",
+   "note": ""
+  },
+  {
+   "check": "Augmented-state DP = DP over full status histories (stochastic prices)",
+   "ref": "Thm.~\\ref{thm:markov}",
+   "instances": 30,
+   "passes": 30,
+   "failures": 0,
+   "unit": "instances",
+   "note": ""
+  },
+  {
+   "check": "DP optimum = HiGHS MIP optimum ($T=24$, deterministic prices)",
+   "ref": "Thm.~\\ref{thm:markov}",
+   "instances": 100,
+   "passes": 100,
+   "failures": 0,
+   "unit": "instances",
+   "note": ""
+  },
+  {
+   "check": "Moore minimisation of the counter automaton leaves $\\UT+\\max(\\DT,T_{\\mathrm{cold}})$ classes",
+   "ref": "Thm.~\\ref{thm:minimal}",
+   "instances": 2000,
+   "passes": 2000,
+   "failures": 0,
+   "unit": "instances",
+   "note": ""
+  },
+  {
+   "check": "Every pair of counter values has different optimal value on the constructed price path",
+   "ref": "Cor.~\\ref{cor:value}",
+   "instances": 15710,
+   "passes": 15710,
+   "failures": 0,
+   "unit": "pairs",
+   "note": ""
+  },
+  {
+   "check": "$\\Delta_t=r+\\gamma\\,\\mathbb E[\\mathrm{clamp}(\\Delta_{t+1},0,S)]$ (every $t,p$)",
+   "ref": "Thm.~\\ref{thm:b1}(a)",
+   "instances": 1000,
+   "passes": 1000,
+   "failures": 0,
+   "unit": "instances",
+   "note": ""
+  },
+  {
+   "check": "$\\Delta_t(p)$ nondecreasing in $p$ (every $t$)",
+   "ref": "Thm.~\\ref{thm:b1}(b)",
+   "instances": 1000,
+   "passes": 1000,
+   "failures": 0,
+   "unit": "instances",
+   "note": ""
+  },
+  {
+   "check": "Start/shut-down sets are upper/lower price sets",
+   "ref": "Thm.~\\ref{thm:b1}(c)",
+   "instances": 1000,
+   "passes": 1000,
+   "failures": 0,
+   "unit": "instances",
+   "note": ""
+  },
+  {
+   "check": "Hysteresis $p^{\\downarrow}_t\\le p^{\\uparrow}_t$",
+   "ref": "Thm.~\\ref{thm:b1}(c)",
+   "instances": 1000,
+   "passes": 1000,
+   "failures": 0,
+   "unit": "instances",
+   "note": ""
+  },
+  {
+   "check": "Shut down only if $r(p)<0$; start only if $r(p)\\ge(1-\\gamma)S$",
+   "ref": "Cor.~\\ref{cor:breakeven}",
+   "instances": 1000,
+   "passes": 1000,
+   "failures": 0,
+   "unit": "instances",
+   "note": ""
+  },
+  {
+   "check": "Stationary prices: $\\Delta_t\\ge\\Delta_{t+1}$, thresholds nondecreasing in $t$",
+   "ref": "Prop.~\\ref{prop:time}",
+   "instances": 500,
+   "passes": 500,
+   "failures": 0,
+   "unit": "instances",
+   "note": ""
+  },
+  {
+   "check": "i.i.d.\\ prices: every decision state has a price threshold",
+   "ref": "Thm.~\\ref{thm:iid}",
+   "instances": 1000,
+   "passes": 1000,
+   "failures": 0,
+   "unit": "instances",
+   "note": ""
+  },
+  {
+   "check": "Start sets nested in $\\tau$ within constant-$S$ segments ($G_t(\\tau{+}1)\\ge G_t(\\tau)$)",
+   "ref": "Prop.~\\ref{prop:sawtooth}",
+   "instances": 3000,
+   "passes": 3000,
+   "failures": 0,
+   "unit": "instances",
+   "note": ""
+  },
+  {
+   "check": "Counterexamples (Prop.~\\ref{prop:cex}) reproduce: $G>0$ at low price, $G<0$ at high price",
+   "ref": "Prop.~\\ref{prop:cex}",
+   "instances": 3,
+   "passes": 3,
+   "failures": 0,
+   "unit": "instances",
+   "note": ""
+  },
+  {
+   "check": "Base-case RTS-GMLC units: every decision state has a price threshold",
+   "ref": "(numerical)",
+   "instances": 5,
+   "passes": 5,
+   "failures": 0,
+   "unit": "instances",
+   "note": ""
+  },
+  {
+   "check": "Exact policy evaluation agrees with Monte Carlo ($|\\,\\cdot\\,|\\le 4$ s.e.)",
+   "ref": "---",
+   "instances": 20,
+   "passes": 20,
+   "failures": 0,
+   "unit": "policies",
+   "note": ""
+  },
+  {
+   "check": "Mean-path HiGHS MIP = deterministic DP on the same path",
+   "ref": "---",
+   "instances": 5,
+   "passes": 5,
+   "failures": 0,
+   "unit": "instances",
+   "note": ""
+  },
+  {
+   "check": "Merit-order dispatch cost = LP optimum (HiGHS)",
+   "ref": "---",
+   "instances": 300,
+   "passes": 300,
+   "failures": 0,
+   "unit": "instances",
+   "note": ""
+  },
+  {
+   "check": "Fleet DP = enumeration of all joint schedules ($N=2$, $T=5$)",
+   "ref": "Thm.~\\ref{thm:markov}",
+   "instances": 5,
+   "passes": 5,
+   "failures": 0,
+   "unit": "instances",
+   "note": ""
+  },
+  {
+   "check": "Fleet: exact policy evaluation agrees with Monte Carlo ($\\le 4$ s.e.)",
+   "ref": "---",
+   "instances": 4,
+   "passes": 4,
+   "failures": 0,
+   "unit": "policies",
+   "note": ""
+  }
+ ],
+ "findings": [
+  {
+   "finding": "Threshold property (random smooth instances)",
+   "instances": 3000,
+   "violations": 0,
+   "unit": "instances",
+   "note": ""
+  },
+  {
+   "finding": "Advantage $G$ monotone in $p$",
+   "instances": 3000,
+   "violations": 22,
+   "unit": "instances",
+   "note": ""
+  },
+  {
+   "finding": "$V(\\text{on},i)-V(\\text{off},j)$ monotone in $p$ (supermodularity)",
+   "instances": 3000,
+   "violations": 2237,
+   "unit": "instances",
+   "note": ""
+  },
+  {
+   "finding": "Start only if $r(p)\\ge(1-\\gamma)S(\\tau)$",
+   "instances": 3000,
+   "violations": 1393,
+   "unit": "instances",
+   "note": ""
+  },
+  {
+   "finding": "Shut down only if $r(p)\\le 0$",
+   "instances": 3000,
+   "violations": 35,
+   "unit": "instances",
+   "note": ""
+  },
+  {
+   "finding": "B3(i): $p^{\\uparrow}_t(\\tau)$ nondecreasing across a cost step",
+   "instances": 102552,
+   "violations": 234,
+   "unit": "pairs",
+   "note": ""
+  },
+  {
+   "finding": "B3(ii): stationary prices, start thresholds nondecreasing in $t$",
+   "instances": 1000,
+   "violations": 77,
+   "unit": "instances",
+   "note": ""
+  },
+  {
+   "finding": "B3(ii): stationary prices, shut-down thresholds nondecreasing in $t$",
+   "instances": 1000,
+   "violations": 29,
+   "unit": "instances",
+   "note": ""
+  },
+  {
+   "finding": "B3(iii) [B1]: $p^{\\uparrow}$ nonincreasing in $\\rho$ (threshold above mean)",
+   "instances": 3234,
+   "violations": 73,
+   "unit": "$(\\text{inst},t)$",
+   "note": ""
+  },
+  {
+   "finding": "B3(iii) [B1]: $p^{\\uparrow}$ nonincreasing in $\\rho$ (threshold below mean)",
+   "instances": 3680,
+   "violations": 1494,
+   "unit": "$(\\text{inst},t)$",
+   "note": ""
+  },
+  {
+   "finding": "B3(iii) [B1]: $p^{\\downarrow}$ nonincreasing in $\\rho$",
+   "instances": 3479,
+   "violations": 2160,
+   "unit": "$(\\text{inst},t)$",
+   "note": ""
+  }
+ ],
+ "chains": {
+  "n": 10753,
+  "monotone": 10753
+ }
+}

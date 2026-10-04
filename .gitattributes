@@ -1,0 +1,2 @@
+# Preserve the exact upstream data bytes and accept its CRLF line endings.
+data/gen.csv -text whitespace=cr-at-eol

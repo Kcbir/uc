@@ -1,0 +1,19 @@
+{
+ "n_iid": 1000,
+ "n_gen": 3000,
+ "n_flat": 1000,
+ "totals": {
+  "sc": 0,
+  "mono": 22,
+  "P": 2237,
+  "be_start": 1393,
+  "be_shut": 35,
+  "within": 0,
+  "n_within": 297240,
+  "across": 234,
+  "n_across": 102552,
+  "Gsaw": 0
+ },
+ "flat_up": 77,
+ "flat_down": 29
+}
